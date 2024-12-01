@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobil ko'rinish */
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block !important;
+  }
+
+  .ant-input-search {
+    max-width: 100% !important;
+  }
+
+  .ant-layout-header {
+    flex-wrap: wrap !important;
+    padding: 10px 15px !important;   
+  }
+}
+  
+
