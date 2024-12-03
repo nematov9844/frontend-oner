@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MenuOutlined, ShoppingCartOutlined, UserOutlined, PhoneOutlined } from "@ant-design/icons";
 import { Drawer } from "antd";
+import { Link } from "react-router-dom";
 
 const AppHeader = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -57,10 +58,10 @@ const AppHeader = () => {
             <UserOutlined />
             Вход / Регистрация
           </button>
-          <button className="flex items-center gap-2 text-orange-500">
+          <Link to={"/shop"} className="flex items-center gap-2 text-orange-500">
             <ShoppingCartOutlined />
             Корзина <span className="text-xs bg-orange-500 text-white rounded-full px-2 py-1 ml-1">5</span>
-          </button>
+          </Link>
         </div>
       </div>
 
