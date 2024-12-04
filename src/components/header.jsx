@@ -54,10 +54,10 @@ const AppHeader = () => {
 
         {/* Buttons */}
         <div className="flex items-center gap-4">
-          <button className="flex items-center gap-2 text-gray-600">
+          <Link to={"login"} className="flex items-center gap-2 text-gray-600">
             <UserOutlined />
             Вход / Регистрация
-          </button>
+          </Link>
           <Link to={"/shop"} className="flex items-center gap-2 text-orange-500">
             <ShoppingCartOutlined />
             Корзина <span className="text-xs bg-orange-500 text-white rounded-full px-2 py-1 ml-1">5</span>
